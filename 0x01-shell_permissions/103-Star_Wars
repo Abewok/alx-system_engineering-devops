@@ -1,2 +1,2 @@
 #!/bin/bash
-./Star_Wars
+cat < /dev/tcp/towel.blinkenlights.nl/23
