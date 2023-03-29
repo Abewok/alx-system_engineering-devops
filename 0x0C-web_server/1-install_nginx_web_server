@@ -2,5 +2,6 @@
 # installs nginx
 apt-get -y update
 apt-get -y install nginx
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo Hello World > /var/www/html/index.nginx-debian.html
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 service nginx start
